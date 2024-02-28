@@ -10,21 +10,36 @@
         color: orange;
         font-weight: bolder;
       }
+      #angular{
+        color: rgb(255, 0, 98);
+      }
       .heading{
         color: cadetblue;
         font-style: italic;
+        background-color: aquamarine;
+        padding: 2px;
       }
+      #selector{
+        color: crimson;
+          background-color: rgb(197, 184, 191);
+        }
       .header{
        color: crimson; 
+       
       } 
       a, u {
      text-decoration: none;
       }
+      .headercolor{
+        background-color: aquamarine;
+        padding: 5px;
+      }
+    
     </style>
   </head>
   <body>
     <!-- Heder Section -->
-    <header>
+    <header class="headercolor">
         <p class="header">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
@@ -59,8 +74,9 @@
         <!-- Home Section -->
         <h2 class="heading">Professional Summary</h2>
         <ul>
-            <li>Having 1 year of experience in developing Single page web Applications using Angular 8, HTMI5, CSS3, Bootstrap 5, Javascript</li>
-            <li>Experience on working with version control system - GIT and Github</li>
+            <li>Having 1 year of experience in developing Single page web Applications using <span id="angular">Angular 8</span>, HTMI5, CSS3, Bootstrap 5, Javascript</li>
+            
+            <li id="selector">Experience on working with version control system - GIT and Github</li>
             <li>Experience working with JIRA for user stories and bug tracking</li>
             <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
             <li>Working experience on ID's like VS code and Notepad++</li>
