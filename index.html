@@ -80,6 +80,23 @@
         #footerSec, #copyRight, #educationSec, #project, #projectSec{
           font-family: "Poppins", sans-serif;
         }
+        #listSummary li{
+          list-style-type: none;
+        }
+        #listSummary li::marker{
+          content:"✍️";
+        }
+        #projectSec{
+          list-style-type: lower-alpha;
+        }
+        #projectSec li{
+          padding-top: 8px;
+
+        }
+        #projectDesc::selection{
+          background-color: rgb(241, 184, 97);
+
+        }
     </style>
   </head>
   <body>
@@ -163,15 +180,15 @@
     <!-- Project Section -->
     <section id="project">
       <h2 class="heading">Projects</h2>
-      <p><strong>Name: <u>Student Management</u></strong><br>
-        <strong><u>Environment:</u></strong> Angular, React, Java, JavaScript, HTML, CSS, Bootstrap, GitHub, Agile and JIRA<br>
-       <strong> Team Size:</strong> 06      &nbsp;  &nbsp;  <strong>Duration:</strong> <i>2021-1<sup>st</sup>-July till <u>present</i></u><br>
-       <strong>Project Description:</strong> This project is mainly used for student management in colleges, where it helps to manage student record like<br>
-        student registration, student update, and to see all the list of academic activities like score card and attendance
+      <p><strong>Name: <u>Student Management</u></strong>
+        <p><strong><u>Environment:</u></strong> Angular, React, Java, JavaScript, HTML, CSS, Bootstrap, GitHub, Agile and JIRA</p>
+        <p><strong> Team Size:</strong> 06      &nbsp;  &nbsp;  <strong>Duration:</strong> <i>2021-1<sup>st</sup>-July till <u>present</i></u></p>
+        <p id="projectDesc"><strong>Project Description:</strong> This project is mainly used for student management in colleges, where it helps to manage student record like <br>  student registration, student update, and to see all the list of academic activities like score card and attendance</p>
+       
         <hr>
-        <p><strong>Roles and Responsibilities</strong></p>
+        <h2 >Roles and Responsibilities</h2>
         <p> 
-          <ul id="projectSec">
+          <ol id="projectSec">
            <li>Designed and Implemented the user interface using HTML5 and CSS3 </li><br>
            <li>Work closely with backend developers for code integration </li><br>
            <li>Identifying and troubleshooting issues in front end codebase </li><br>
@@ -179,7 +196,7 @@
            <li>Used JIRA for bug tracking </li><br>
            <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint retrospective meetings </li><br>
            <li>involved in fixing technical issues in production environment</li>
-          </ul>
+          </ol>
        </p>
        </p>
     </section>
