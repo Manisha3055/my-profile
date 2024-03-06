@@ -6,98 +6,9 @@
     <title>My Profile</title>
     <!-- CDN Link from font awesome  in w3c school-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Google font family from google link madmini and popins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/logo.png" type="Image/x-icon">
-    <style>
-      *{
-        box-sizing: border-box;
-      }
-      header{
-        padding: 15px;
-        background-color: rgb(194, 255, 255);
-        font-family: "Roboto", sans-serif;
-      }
-      .heading{
-        color: cadetblue;
-        font-style: italic;
-        background-color: aquamarine;
-        padding: 2px;
-        /* text-shadow: -20px -5px 6px rgba(156,134,134,0.6); */
-        font-family: "Roboto", sans-serif;
-      }
-      a, u {
-     text-decoration: none;
-      }
-      .header-info{
-        margin-right: 40px;
-        margin-left: 3px;
-        font-weight: bolder;
-      }
-      #resume{
-        margin-left: 10px;
-        color: coral;
-        font-weight: bolder;
-      }
-      .Nav{
-        margin-right: 40px;
-        margin-left: 10px;
-        font-weight: bolder;
-        font-family: "Roboto", sans-serif;
-      }
-      .footer{
-        margin-right: 10px;
-        margin-left: 5px;
-        font-family: "Poppins", sans-serif;
-      }
-      .home{
-         padding-bottom: 10px;
-      }
-      /* .subject td,
-      .subject th{
-        padding: 15px;
-      }
-        .study td,
-        .study th {
-          padding: 15px;
-        }  */
-        table, tr, th, td {
-          border: 2px solid rgb(216, 208, 174);
-          border-collapse: collapse;
-        }
-        td, th{
-          padding: 10px;
-        }
-        #techTable{
-          width: 50%;
-          font-family: "Poppins", sans-serif;
-        }
-        #listSummary{
-          font-family: "Roboto", sans-serif;
-        }
-        #footerSec, #copyRight, #educationSec, #project, #projectSec{
-          font-family: "Poppins", sans-serif;
-        }
-        #listSummary li{
-          list-style-type: none;
-        }
-        #listSummary li::marker{
-          content:"✍️";
-        }
-        #projectSec{
-          list-style-type: lower-alpha;
-        }
-        #projectSec li{
-          padding-top: 8px;
-
-        }
-        #projectDesc::selection{
-          background-color: rgb(241, 184, 97);
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <!-- Heder Section -->
@@ -114,16 +25,20 @@
     </header>
     <!-- Navigation Section -->
     <!-- Nav links section - Roboto -->
-    <nav>
-        <a href="#home" class="Nav">Home</a>  
-        <a href="#techStack" class="Nav">Tech Stack</a>  
-        <a href="#project" class="Nav">Projects</a> 
-        <a href="#education" class="Nav">Education</a>  
-        <a href="personalDetail.html" class="Nav" target="_blank">Personal Details</a>   
-        <a href="others.html" class="Nav" target="_blank">Other</a>
+    <nav id="navSection">
+      <ul>
+        <li><a href="#home">HOME</a> </li>
+        <li><a href="#techStack">TECH STACK</a> </li>
+        <li><a href="#project">PROJECTS</a></li>
+        <li><a href="#techStack">TECH STACK</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+        <li> <a href="others.html" target="_blank">OTHERS</a></li>
+      </ul>
     </nav>
     <!-- Main Section -->
     <!-- main heading section - Roboto -->
+    <section id="container">
     <section id="home">
         <!-- Home Section -->
         <h2 class="heading">Professional Summary</h2>
@@ -258,5 +173,6 @@
       <!-- Copy Write Section -->
       Copyright &copy;2024 Codemind Technology Video Communications, Inc. All rights reserved.
     </section>
+  </section>
   </body>
 </html>
