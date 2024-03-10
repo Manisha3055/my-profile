@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .text {
+            width: 400px;
+            height: 550px;
+            border: 2px solid rgb(152, 221, 233);
+            border-width: 3px;
+            border-radius: 10px;
+            margin: 20px ;
+            background-color: #fcffff;
+            overflow: hidden; 
+        }
+
+        .content {
+            margin-left: 2px; 
+            padding: 20px; 
+        }
+
+        .required:after {
+            content: " *";
+            color: red;
+        }
+        #textarea{
+            width: 250x;
+            height: 200px;
+            border: 2px solid rgb(1, 18, 20);
+            background-color: rgb(0, 153, 255);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-left: 15px;
+        }
+        
+input[type="email"]{
+    /* margin: 10px; */
+    
+    padding: 5px 5px ;
+    padding-bottom: 20px;
+    width: 100%;
+    border: 1px solid rgb(189, 240, 240); 
+    background-color: rgb(213, 247, 247);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+}
+input[type="text"]{
+    /* margin-top: 10px; */
+    padding: 5px 5px ;
+    padding-bottom: 20px;
+    width: 100%;
+    border: 1px solid rgb(189, 240, 240); 
+    background-color: rgb(213, 247, 247);
+    border-radius: 8px;
+    font-size:medium;
+    block-size: 45px;
+}
+
+button[type="submit"] {
+    color:rgb(2, 0, 0);
+    border: 1px solid black; 
+    margin-top: 25px;
+    margin-left: 210px;
+    padding: 5px 5px ;
+    
+    border: 1px solid rgb(189, 240, 240); 
+    background-color: rgb(213, 247, 247);
+    text-align: center;
+    width: 40%; 
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="text">
+        <div class="content">
+            <h2>Subscriber</h2><hr>
+            <section id="textarea">
+            <p>We're sorry to see you go, but hey, no hard<br> feelings, hopefully we will see you back <br>one day.<br>
+            Please fill in your email address in order to<br> unsubscribe from the list.<br>
+            You will receive an email to confirm your <br>unsubscription, just to make sure this is<br> not an accident or somebody else tries to<br> unsubscribe you.</p>
+        </section>
+            <label class="required">Email:</label> <br>
+            <input type="email">
+            <br>
+            <label for="">Unsubscribe reason</label><br>
+            <input type="text" placeholder="unsubscribe reason">
+            <br>
+            <hr>
+            <button type="submit">Unsubscribe</button>
+        </div>
+    </section>
+</body>
+</html>
